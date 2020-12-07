@@ -51,8 +51,8 @@ function getCicleCircumference(radius) {
  *  10, 0  => 5
  *  -3, 3  => 0
  */
-function getAverage(/* value1, value2 */) {
-  throw new Error('Not implemented');
+function getAverage(value1, value2) {
+  return (value1 + value2) ? value1 / 2 + value2 / 2 : (value1 + value2) / 2;
 }
 
 /**
@@ -109,9 +109,9 @@ function getLinearEquationRoot(a, b) {
  *   (0,1) (0,1)     => 0
  *   (0,1) (1,2)     => 0
  */
-function getAngleBetweenVectors(/* x1, y1, x2, y2 */) {
-  throw new Error('Not implemented');
-  /* return Math.abs(Math.atan(y2 / x2) - Math.atan(y1 / x1)); */
+function getAngleBetweenVectors(x1, y1, x2, y2) {
+  // throw new Error('Not implemented');
+  return Math.abs(Math.atan2(y2, x2) - Math.atan2(y1, x1));
 }
 
 /**
