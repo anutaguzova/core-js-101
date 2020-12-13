@@ -427,8 +427,14 @@ function toStringList(arr) {
  *      { country: 'Russia',  city: 'Saint Petersburg' }
  *    ]
  */
-function sortCitiesArray(arr) {
-  return arr.sort((a, b) => a.country - b.country).sort((a, b) => a.city - b.city);
+function sortCitiesArray(/* arr */) {
+  throw new Error('Not implemented');
+  // arr.sort(function(a, b) {
+  // if (a.country === b.country) {
+  //   return a.city.localeCompare(b.city);
+  // }
+  //  return b.country.localeCompare(a.country);
+  // });
 }
 
 /**
